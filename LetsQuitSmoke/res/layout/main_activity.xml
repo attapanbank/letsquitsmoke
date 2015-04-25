@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff0"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+    <!-- End Header -->
+
+
+    <!-- Call -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_weight="1.44"
+                android:background="@drawable/hes" >
+
+                <TextView
+                    android:id="@+id/textHeadBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Let&apos;s Quit Smoke"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#eceff0" >
+            </LinearLayout>
+        </LinearLayout>
+
+        
+
+        <TextView
+            android:id="@+id/textSmoke"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/selector_stop_button"
+            android:gravity="center"
+            android:text="กด เพื่อบันทึก การสูบ"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        
+        
+        <ImageView
+            android:id="@+id/imaCall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/selector_call_button"
+            android:src="@drawable/ic_action_call" />
+    </FrameLayout>
+
+    <!-- End Call -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- Graph Button -->
+
+            <RelativeLayout
+                android:id="@+id/graphBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_list_graph" >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/ic_action_network_cell" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_action_next_item" />
+
+                <TextView
+                    android:id="@+id/textViewGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="กราฟ"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+            <!-- End Graph Button -->
+
+
+            <!-- Share Button -->
+
+            <RelativeLayout
+                android:id="@+id/facebookShareBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_list_share" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_action_next_item" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_facebook"
+                    android:src="@drawable/facebookf" />
+
+                <TextView
+                    android:id="@+id/textViewShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Share"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+            <!-- End Share Button -->
+
+
+            <!-- Guide Button -->
+
+            <RelativeLayout
+                android:id="@+id/guideBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_list_guide" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_action_next_item" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/ic_action_paste" />
+
+                <TextView
+                    android:id="@+id/textViewGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/imageView1"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="แนะนำการเลิกบุหรี่"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <!-- End Guide Button -->
+
+
+            <!-- Tutorial Button -->
+
+            <RelativeLayout
+                android:id="@+id/Btn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_list_tutor" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_action_next_item" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_tutor"
+                    android:src="@drawable/ic_qu" />
+
+                <TextView
+                    android:id="@+id/textViewTu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="คู่มือการใช้งาน"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+            <!-- End Tutorial Button -->
+
+
+            <!-- Setting Button -->
+
+            <RelativeLayout
+                android:id="@+id/settingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_list_setting" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_action_next_item" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/ic_action_settings" />
+
+                <TextView
+                    android:id="@+id/textViewSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="ตั้งค่า"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <!-- End Setting Button -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
